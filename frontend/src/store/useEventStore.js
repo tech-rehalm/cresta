@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-const apiURL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/events" : "/api/events";
+const apiURL =  "https://cresta-api.vercel.app/api/events";
 const useEventStore = create((set) => ({
   events: [],
   loading: false,

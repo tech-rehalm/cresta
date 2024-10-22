@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import axios from 'axios'
 
-const apiUrl = "http://localhost:5000/api/enrollments"
+const apiUrl = "https://cresta-api.vercel.app/api/enrollments"
 export const useEnrollmentStore = create((set) => ({
     enrollments: [],
     isLoading: false,
